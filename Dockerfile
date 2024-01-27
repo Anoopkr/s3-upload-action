@@ -10,4 +10,4 @@ RUN apk --no-cache add \
 RUN pip install awscli
 
 ADD entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["./entrypoint.sh"]
