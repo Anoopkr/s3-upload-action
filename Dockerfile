@@ -9,5 +9,5 @@ RUN apk --no-cache add \
 # Install AWS CLI using pip
 RUN pip install awscli
 
-ADD entrypoint.sh /entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["./entrypoint.sh"]
